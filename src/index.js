@@ -26,7 +26,7 @@ syncRoutesWithStore(store, routerHistory);
 
 ReactDOM.render(
 	<Provider store={store}>
-		<PersistGate loading={null} persistor={persistor}>
+		<PersistGate loading={<div>loading</div>} persistor={persistor}>
 			<ConnectedRouter history={routerHistory}>{routes}</ConnectedRouter>
 		</PersistGate>
 	</Provider>,
