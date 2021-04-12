@@ -15,11 +15,15 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.js|.jsx?$/,
 				exclude: /node_modules/,
 				use: {
 					loader: "babel-loader",
 				},
+			},
+			{
+				test: /\.(png|svg|jpg|gif)$/,
+				use: ["file-loader"],
 			},
 			{
 				test: /\.(scss|css)$/,
