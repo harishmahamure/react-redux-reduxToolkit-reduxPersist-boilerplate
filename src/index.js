@@ -16,7 +16,6 @@ const store = configureStoreRedux(routerHistory);
 const syncRoutesWithStore = (store, history) => {
 	const { router } = store.getState();
 	if (router && router.location) {
-		console.log(history);
 		history.replace(router.location);
 	}
 };

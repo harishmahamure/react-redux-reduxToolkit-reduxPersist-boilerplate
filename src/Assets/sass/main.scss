@@ -1,0 +1,20 @@
+$color-sassy: #cc4397;
+$color-blue: #0059ff;
+
+.app {
+	color: $color-blue;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2rem;
+	.head {
+		font-size: 2rem;
+	}
+
+	.sassyDiv {
+		font-size: 3rem;
+		color: $color-sassy;
+	}
+}
