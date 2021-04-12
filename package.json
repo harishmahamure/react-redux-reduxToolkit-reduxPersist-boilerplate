@@ -12,7 +12,17 @@
 		"type": "git",
 		"url": "git+https://github.com/harishmahamure/react-redux-reduxToolkit-reduxPersist-boilerplate.git"
 	},
-	"author": "Harish Mahamure",
+	"keywords": [
+		"Redux",
+		"localstorage",
+		"react redux boilerplate",
+		"redux toolkit",
+		"redux Persist"
+	],
+	"author": {
+		"name": "Jordan Schroter",
+		"email": "hmahamure10@gmail.com"
+	},
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/harishmahamure/react-redux-reduxToolkit-reduxPersist-boilerplate/issues"
