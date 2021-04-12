@@ -11,9 +11,10 @@ const axiosInstance = axios.create({
 
 axiosInstance.defaults.params = {};
 
-axios.interceptors.request.use(
+axiosInstance.interceptors.request.use(
 	function (config) {
 		// Do something before request is sent
+		console.log(request);
 		return config;
 	},
 	function (error) {
@@ -22,7 +23,7 @@ axios.interceptors.request.use(
 	}
 );
 
-axios.interceptors.response.use(
+axiosInstance.interceptors.response.use(
 	function (response) {
 		// Any status code that lie within the range of 2xx cause this function to trigger
 		// Do something with response data
