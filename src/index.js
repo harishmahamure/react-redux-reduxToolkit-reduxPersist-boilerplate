@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-
+import { PersistGate } from "redux-persist/integration/react";
+import { persistStore } from "redux-persist";
 import { createBrowserHistory } from "history";
 import configureStoreRedux from "./store";
 import { ConnectedRouter } from "connected-react-router";
@@ -19,12 +20,15 @@ const syncRoutesWithStore = (store, history) => {
 		history.replace(router.location);
 	}
 };
+let persistor = persistStore(store);
 
 syncRoutesWithStore(store, routerHistory);
 
 ReactDOM.render(
 	<Provider store={store}>
-		<ConnectedRouter history={routerHistory}>{routes}</ConnectedRouter>
+		<PersistGate loading={null} persistor={persistor}>
+			<ConnectedRouter history={routerHistory}>{routes}</ConnectedRouter>
+		</PersistGate>
 	</Provider>,
 	element
 );
