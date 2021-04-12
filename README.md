@@ -11,7 +11,7 @@ A minimal boilerplate to get started with [React](https://facebook.github.io/rea
 - [React Snap](https://www.npmjs.com/package/react-snap)
 - [Redux Persist](https://www.npmjs.com/package/redux-persist)
 - [SASS](https://sass-lang.com/)
-- [serve](https://github.com/vercel/serve#readme)
+- [Serve](https://github.com/vercel/serve#readme)
 
 ## Quick start
 
