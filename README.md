@@ -1,6 +1,6 @@
 # react-redux-reduxToolkit-reduxPersist-boilerplate
 
-A minimal boilerplate to get started with [React](https://facebook.github.io/react/), [Redux](http://redux.js.org/), [Redux-toolkit](https://redux-toolkit.js.org/).
+A minimal boilerplate to get started with [React](https://facebook.github.io/react/), [Redux](http://redux.js.org/), [Redux-toolkit](https://redux-toolkit.js.org/) and [SASS](https://sass-lang.com/)
 
 ## Includes
 
