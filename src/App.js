@@ -15,9 +15,14 @@ function App() {
 				</span>
 			</div>
 			<div className="sassyDiv">A minimal boilerplate to get started with React and Redux!</div>
-			<button onClick={() => dispatch(increment())}>add</button>
+
+			<button className="button" onClick={() => dispatch(increment())}>
+				add
+			</button>
 			<p>{counter}</p>
-			<button onClick={() => dispatch(decrement())}>remove</button>
+			<button className="button" onClick={() => dispatch(decrement())}>
+				remove
+			</button>
 		</div>
 	);
 }

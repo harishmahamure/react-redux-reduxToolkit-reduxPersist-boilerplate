@@ -14,7 +14,33 @@ $color-blue: #0059ff;
 	}
 
 	.sassyDiv {
-		font-size: 3rem;
+		font-size: 1.5rem;
 		color: $color-sassy;
+		padding-bottom: 2rem;
 	}
+}
+
+.button {
+	appearance: none;
+	border: none;
+	background: none;
+	font-size: 1.5 rem;
+	padding-left: 12px;
+	padding-right: 12px;
+	outline: none;
+	border: 2px solid transparent;
+	color: rgb(112, 76, 182);
+	padding-bottom: 4px;
+	cursor: pointer;
+	background-color: rgba(112, 76, 182, 0.1);
+	border-radius: 2px;
+	transition: all 0.15s;
+}
+
+.textbox {
+	font-size: 32px;
+	padding: 2px;
+	width: 64px;
+	text-align: center;
+	margin-right: 8px;
 }
